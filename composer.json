@@ -1,18 +1,21 @@
 {
     "name": "zack6849/ship-station",
-    "description": "A php wrapper for ship station's api",
-    "type": "api-wrapper",
+    "description": "A php wrapper for ship station's rest api",
+    "type": "library",
+    "homepage": "https://github.com/zack6849/ship-station/",
     "keywords": ["ship", "shipping", "ship-station", "shipstation", "api", "wrapper"],
     "license": "MIT",
     "authors": [
         {
             "name": "Michael Bonds",
             "email": "mbonds1219@gmail.com",
+            "homepage": "http://michaelbonds.com",
             "role": "author"
         },
         {
             "name": "Zachary Craig",
             "email": "zack@zack6849.com",
+            "homepage": "https://zack6849.com",
             "role": "maintainer"
         }
     ],
@@ -23,5 +26,8 @@
     },
     "require": {
         "guzzlehttp/guzzle": "~6.0"
+    },
+    "replace":{
+        "michaelb/ship-station": "*"
     }
 }
