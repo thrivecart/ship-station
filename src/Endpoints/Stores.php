@@ -7,7 +7,7 @@ use MichaelB\ShipStation\Models\Store;
 
 class Stores extends BaseEndpoint
 {
-    protected $endpoint = '/stores';
+    protected $endpoint = '/stores/';
 
     /**
      * Get a single store by id
@@ -67,7 +67,7 @@ class Stores extends BaseEndpoint
         if($refreshDate != null){
             $params['refreshDate'] = $refreshDate;
         }
-        return $this->post('/refreshstore', ['query' => $params]);
+        return $this->post('refreshstore', ['query' => $params]);
     }
 
     /**
