@@ -1,13 +1,19 @@
 {
-    "name": "michaelb/ship-station",
+    "name": "zack6849/ship-station",
     "description": "A php wrapper for ship station's api",
-    "type": "Api Wrapper",
+    "type": "api-wrapper",
     "keywords": ["ship", "shipping", "ship-station", "shipstation", "api", "wrapper"],
     "license": "MIT",
     "authors": [
         {
             "name": "Michael Bonds",
-            "email": "mbonds1219@gmail.com"
+            "email": "mbonds1219@gmail.com",
+            "role": "author"
+        },
+        {
+            "name": "Zachary Craig",
+            "email": "zack@zack6849.com",
+            "role": "maintainer"
         }
     ],
     "autoload": {
