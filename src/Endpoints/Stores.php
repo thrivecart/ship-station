@@ -58,9 +58,16 @@ class Stores extends BaseEndpoint
      *
      * @return \GuzzleHttp\Psr7\Response
      */
-    public function refreshStore($storeId = '', $refreshDate = '')
+    public function refreshStore($storeId = '', $refreshDate = null)
     {
-        return $this->post('refreshstore', ['query' => compact('storeId', 'refreshDate')]);
+        $params = array();
+        if($storeId != ''){
+            $params['storeId'] = $storeId;
+        }
+        if($refreshDate != null){
+            $params['refreshDate'] = $refreshDate;
+        }
+        return $this->post('/refreshstore', ['query' => $params]);
     }
 
     /**
