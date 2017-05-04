@@ -117,7 +117,7 @@ class Orders extends BaseEndpoint
         return $this->post('holduntil', [
             'form_params' => [
                 'orderid' => $order_id,
-                'holdUntil' => $hold_until_date
+                'holdUntilDate' => $hold_until_date
             ]
         ]);
     }
