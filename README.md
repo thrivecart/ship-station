@@ -3,7 +3,7 @@
 ## Install
 ---
 ```
-composer require michaelb/ship-station
+composer require zack6849/ship-station
 ```
 
 ## Docs
