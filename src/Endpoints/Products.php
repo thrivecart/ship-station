@@ -17,7 +17,7 @@ class Products extends BaseEndpoint
      */
     public function getProduct($productId = '')
     {
-        return $this->get('', ['query' => ['productId' => $productId]]);
+        return $this->get($productId);
     }
 
     /**
