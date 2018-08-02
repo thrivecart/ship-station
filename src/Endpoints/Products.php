@@ -17,7 +17,7 @@ class Products extends BaseEndpoint
      */
     public function getProduct($productId = '')
     {
-        return $this->get('', ['query' => ['id' => $productId]]);
+        return $this->get('', ['query' => ['productId' => $productId]]);
     }
 
     /**
@@ -30,7 +30,7 @@ class Products extends BaseEndpoint
     public function update(Product $product)
     {
         return $this->put('', [
-            'query' => ['id' => $product->productId],
+            'query' => ['productId' => $product->productId],
             'form_params' => $product->toArray()
         ]);
     }
