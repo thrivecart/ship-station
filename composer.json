@@ -1,5 +1,5 @@
 {
-    "name": "zack6849/ship-station",
+    "name": "marcfowler/ship-station",
     "description": "An updated and maintained PHP Wrapper for ShipStation's rest api, forked from michaelb/ship-station, docs @ https://shipstation.docs.apiary.io/",
     "type": "library",
     "homepage": "https://github.com/zack6849/ship-station/",
